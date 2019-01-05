@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class User extends Model {
+    protected $table    = "user";
+    protected $primary  = "idUser";
+    protected $fillable = [
+        "namaLengkap",
+        "username",
+        "password",
+        "foto"
+    ];
+    protected $hidden = [
+        "username",
+        "password"
+    ];
+}
