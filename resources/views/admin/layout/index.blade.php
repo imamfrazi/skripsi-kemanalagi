@@ -66,6 +66,7 @@
         <li class="header">MAIN NAVIGATION</li>
         <li id="menuDashboard"><a href="{{ route('admin.dashboard.index') }}"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
         <li id="menuTours"><a href="{{ route('admin.tour.index') }}"><i class="fa fa-area-chart"></i> <span>Wisata</span></a></li>
+        <li id="menuLinks"><a href="{{ route('admin.link.index') }}"><i class="fa fa-book"></i> <span>Link Wisata</span></a></li>
         <li id="menuUsers"><a href="{{ route('admin.user.index') }}"><i class="fa fa-book"></i> <span>Users</span></a></li>
       </ul>
     </section>

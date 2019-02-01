@@ -26,8 +26,8 @@
 <div class="container">
 	<div class="col m12">
 	  <div class="row" style="padding-top:50px;">
-	  	@if(!empty($data))
-	  		@foreach($data as $d)
+	  	@if(!empty($data['data']))
+	  		@foreach($data['data'] as $d)
 			    <div class="col m4">
 			      <div class="card">
 			        <div class="card-image">
@@ -43,10 +43,32 @@
 			      </div>
 			    </div>
 		    @endforeach
-		@else	
+			@else	
 		    <center><i>Tidak ada data ditemukan.</i></center>
 	    @endif
 	  </div>
+	</div>
+	<br>
+	<div class="col">
+		<div class="row">
+			<h5 style="padding-bottom:20px;" class="bold">Link Retrieval</h5>
+			<table>
+				<tbody>
+					@if(!empty($data['link']))
+						@foreach($data['link'] as $d)
+						<tr>
+							<thead>
+								<th>{{ $d['judul'] }}</th>
+							</thead>
+							<td><a href="{{ $d['link'] }}" target="_blank">{{ $d['link'] }}</a></td>
+						</tr>
+						@endforeach
+						@else	
+		    			<center><i>Tidak ada link terkait ditemukan.</i></center>
+	    			@endif
+				</tbody>
+			</table>
+		</div>
 	</div>
 </div>
 @stop

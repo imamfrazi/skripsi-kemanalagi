@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 06, 2019 at 06:04 AM
--- Server version: 10.3.11-MariaDB-1:10.3.11+maria~bionic-log
--- PHP Version: 7.2.13-1+ubuntu18.04.1+deb.sury.org+1
+-- Generation Time: Feb 01, 2019 at 10:55 PM
+-- Server version: 10.3.12-MariaDB-1:10.3.12+maria~bionic-log
+-- PHP Version: 7.2.14-1+ubuntu18.04.1+deb.sury.org+1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -51,6 +51,31 @@ INSERT INTO `galeri` (`idGaleri`, `idWisata`, `namaGambar`, `created_at`, `updat
 (41, 19, '2019-01-05-5c30ecfb47463.jpg', '2019-01-05 09:44:27', '2019-01-05 09:44:27'),
 (42, 19, '2019-01-05-5c30ecfb5a490.png', '2019-01-05 09:44:27', '2019-01-05 09:44:27'),
 (43, 19, '2019-01-05-5c30ecfbdca4c.jpg', '2019-01-05 09:44:27', '2019-01-05 09:44:27');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `linkWisata`
+--
+
+CREATE TABLE `linkWisata` (
+  `idLinkWisata` int(11) NOT NULL,
+  `judul` varchar(200) NOT NULL,
+  `link` varchar(1000) NOT NULL,
+  `daerah` varchar(100) NOT NULL,
+  `kategori` varchar(20) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  `updated_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `linkWisata`
+--
+
+INSERT INTO `linkWisata` (`idLinkWisata`, `judul`, `link`, `daerah`, `kategori`, `created_at`, `updated_at`) VALUES
+(1, 'Pantai Tanjung Bira Bulukumba : Keindahan Pasir Putih Dan Birunya Air Laut', 'https://piknikasik.com/pantai-tanjung-bira-bulukumba-keindahan-pasir-putih-dan-birunya-air-laut', 'Bulukumba', 'Pantai', '2019-02-01 06:35:14', '2019-02-01 06:35:14'),
+(2, 'Hal yang Harus Diketahui Sebelum ke Pantai Appalarang, Sulawesi Selatan', 'https://phinemo.com/backpacker-guide-menyesap-kopi-di-anjungan-pantai-appalarang-sulawesi-selatan/', 'Bulukumba', 'Pantai', '2019-02-01 06:38:54', '2019-02-01 06:41:18'),
+(3, 'ADA KERAJAAN KUPU-KUPU DI TAMAN NASIONAL BANTIMURUNG, MAROS MAKASSAR', 'http://jejaklangkahku.com/2015/07/10/ada-kerajaan-kupu-kupu-di-taman-nasional-bantimurung-maros-makassar/', 'Maros', 'Kebun Wisata', '2019-02-01 06:40:46', '2019-02-01 06:40:46');
 
 -- --------------------------------------------------------
 
@@ -117,6 +142,12 @@ ALTER TABLE `galeri`
   ADD PRIMARY KEY (`idGaleri`,`idWisata`);
 
 --
+-- Indexes for table `linkWisata`
+--
+ALTER TABLE `linkWisata`
+  ADD PRIMARY KEY (`idLinkWisata`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -137,6 +168,11 @@ ALTER TABLE `wisata`
 --
 ALTER TABLE `galeri`
   MODIFY `idGaleri` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+--
+-- AUTO_INCREMENT for table `linkWisata`
+--
+ALTER TABLE `linkWisata`
+  MODIFY `idLinkWisata` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `user`
 --

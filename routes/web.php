@@ -35,6 +35,12 @@ Route::group(['middleware' => 'authadmin'],function(){
 	Route::post('saveUser', 'Admin\UserController@store')->name('admin.user.store');
 	Route::post('updateUser', 'Admin\UserController@update')->name('admin.user.update');
 	Route::post('deleteUser', 'Admin\UserController@delete')->name('admin.user.delete');
+
+	Route::get('link', 'Admin\LinkController@index')->name('admin.link.index');
+	Route::get('getDataLink', 'Admin\LinkController@getData')->name('admin.link.get');
+	Route::post('saveLink', 'Admin\LinkController@store')->name('admin.link.store');
+	Route::post('updateLink', 'Admin\LinkController@update')->name('admin.link.update');
+	Route::post('deleteLink', 'Admin\LinkController@delete')->name('admin.link.delete');
 });
 
 Route::get('/', 'User\HomeController@index')->name('user.home.index');
