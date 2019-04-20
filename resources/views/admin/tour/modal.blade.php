@@ -101,7 +101,7 @@
               <div class="col-sm-9">
                 <input type="file" id="gambarPriview" name="gambarPriview[]" required multiple="multiple" accept="image/x-png,image/jpeg">
                 <div>
-                  <i>Maximal 6 gambar.</i>
+                  <!-- <i>Maximal 6 gambar.</i> -->
                 </div>
               </div>
             </div>

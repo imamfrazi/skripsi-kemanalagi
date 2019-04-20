@@ -40,6 +40,7 @@ class TourServices {
 		return $data;
 	}
 	public function store($request) {
+		ini_set('memory_limit', '1024M');
 		try {			
 			try {
 				$currentDate = Carbon::now()->toDateString();
@@ -124,6 +125,7 @@ class TourServices {
 		return $status;
 	}
 	public function update($request) {
+		ini_set('memory_limit', '1024M');
 		try {			
 			try {
 				$currentDate = Carbon::now()->toDateString();

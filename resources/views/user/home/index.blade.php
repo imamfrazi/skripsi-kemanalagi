@@ -90,15 +90,15 @@
       <h5 style="padding-bottom:30px;" class="bold">Cara Menggunakan</h5>
         <div class="col s12 m4 l4">
           <img src="{{ asset('public/user_template/img/howto/select.png') }}" height="220px" alt="cara-pesan" style="padding-left:50px; padding-bottom:15px;">
-          <p class="root-font-size center no-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="root-font-size center no-margin">Pilih kategori wisata yang anda inginkan dan daerah yg anda ingin tuju.</p>
         </div>
         <div class="col s12 m4 l4">
           <img src="{{ asset('public/user_template/img/howto/route.png') }}" height="220px" alt="cara-pesan" style="padding-left:50px; padding-bottom:15px;">
-          <p class="root-font-size center no-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="root-font-size center no-margin">Pada tahap ini akan munch beberapa list destinasi wisata sesuai pilihan anda.</p>
         </div>
         <div class="col s12 m4 l4">
           <img src="{{ asset('public/user_template/img/howto/search.png') }}" height="220px" alt="cara-pesan" style="padding-left:50px; padding-bottom:15px;">
-          <p class="root-font-size center no-margin">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="root-font-size center no-margin">Pilih detail untuk melihat rincian destinasi wisata yang ingin anda lihat.</p>
         </div>
     </div>
     <div class="row no-margin hide-on-med-and-down"></div>
